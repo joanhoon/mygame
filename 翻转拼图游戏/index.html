@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 66px;
+            margin: 30px 0;
+        }
+
+        #board {
+            background-color: #000;
+            padding: 2px;
+            display: inline-block;
+        }
+
+        div.box {
+            width: 70px;
+            height: 70px;
+            float: left;
+            margin: 4px;
+            background-color: #e6ab5e;
+            color: transparent;
+            cursor: pointer;
+        }
+
+        div.on {
+            background-color: #5c90ff;
+        }
+
+        .state {
+            margin-top: 50px;
+        }
+
+        .state>h3>span {
+            font-size: 14px;
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>翻转拼图游戏</h1>
+    <div id="board">
+    </div>
+    <div class="state">
+
+        <h3>游戏说明：<span>如何才算赢：使拼板全部变成蓝色.</span></h3>
+
+    </div>
+</body>
+<script src="./jquery.js"></script>
+<script src="./index.js"></script>
+
+
+</html>
